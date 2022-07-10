@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angelinama/employee-tracker.git"
+    "url": "git+https://github.com/kattheswagger1122/employee-tracker.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/angelinama/employee-tracker/issues"
+    "url": "https://github.com/kattheswagger1122/employee-tracker.gits"
   },
-  "homepage": "https://github.com/angelinama/employee-tracker#readme",
+  "homepage": "https://github.com/kattheswagger1122/employee-tracker.#readme",
   "dependencies": {
     "console.table": "^0.10.0",
-    "dotenv": "^8.2.0",
-    "figlet": "^1.5.0",
-    "inquirer": "^7.3.3",
-    "mysql": "^2.18.1"
+    "express": "^4.18.1",
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.2",
+    "mysql2": "^2.3.3"
   }
 }
