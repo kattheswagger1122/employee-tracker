@@ -499,3 +499,41 @@ const addNewDepartment = () => {
       });
     });
   };
+
+  
+  const deleteEmployee = () => {
+    connection.query("SELECT * FROM EMPLOYEE", (err, res) => {
+      if (err) throw err;
+  
+      const employeeChoice = [];
+      res.forEach(({ first_name, last_name, id }) => {
+        employeeChoice.push({
+          name: first_name + " " + last_name,
+          value: id
+        });
+      });
+  
+      let questions = [
+        {
+          type: "list",
+          name: "id",
+          choices: employeeChoice,
+          message: "which employee do u want to delete?"
+        }
+      ];
+  
+      inquier.prompt(questions)
+      .then(response => {
+        const query = `DELETE FROM EMPLOYEE WHERE id = ?`;
+        connection.query(query, [response.id], (err, res) => {
+          if (err) throw err;
+          console.log(`${res.affectedRows} row(s) successfully deleted!`);
+          startPrompt();
+        });
+      })
+      .catch(err => {
+        console.error(err);
+      });
+    });
+  };
+  
