@@ -39,20 +39,15 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 ```
 
-## Usage
-A command-line application that at a minimum allows the user to:
-- Add departments, roles, employees (one row at a time)
-- View departments, roles, employees
-- Update employee roles
-- Update employee managers
-- View employees by manager
-- Delete departments, roles, and employees (one row at a time)
+## Usage 
+This application will allow users to view, add, and edit employees, roles, departments, and managers. 
 
-
+## Installation 
+The user should clone the repository from GitHub. This application requires Node.js, Inquirer, console.table and mysql2. To start application run `npm start`. To view database from MySQL `run mysql -u root -p`. 
 
 # Review
 ## Youtube Walk Through Video Link
-
+https://youtu.be/iE29m66mTBA
 ## Github Page
 https://github.com/kattheswagger1122/employee-tracker.git
 
